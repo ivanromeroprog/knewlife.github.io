@@ -96,6 +96,7 @@ main .container h2 {
   text-align: center;
   width: calc(100vw - 1rem);
   background-color: #212529;
+  visibility: hidden;
 }
 
 
