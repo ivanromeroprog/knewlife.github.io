@@ -1,38 +1,64 @@
-/* .bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-} */
-
 /** Big screens */
 @media (min-width: 768px) {
-
-  /*   .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  } */
   .navbar-brand {
     position: absolute !important;
   }
 }
 
 /** Scrollbars */
+html {
+  --scrollbarBG: #1b1b1b;
+  --thumbBG: #f9004d;
+}
+
 body::-webkit-scrollbar {
-  width: 0.5em;
+  width: 1rem;
+}
+
+body {
+  scroll-behavior: smooth;
+  /*   overflow: auto;
+  overflow-x: hidden; */
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
 
 body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #1b1b1b;
+  background: var(--scrollbarBG);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #f9004d;
-  outline: 1px solid #c4003a;
-  border-radius: 5px;
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
 }
 
+/** Animations */
+@keyframes wait {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(20px);
+    opacity: 0;
+  }
+
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+    opacity: 1;
+  }
+}
+
+/** Tags, classes, etc. */
 h1,
 h2,
 h3,
@@ -52,7 +78,6 @@ p {
   margin: 10px 0 0 0;
 }
 
-
 main .container {
   width: auto;
   max-width: 680px;
@@ -60,7 +85,48 @@ main .container {
   background-color: #1b1b1b;
 }
 
-.profile {
+main .container h2 {
+  border: 2px #f9004d solid;
+  border-left: 0;
+  border-right: 0;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  translate: 0 -70px;
+  text-align: center;
+  width: calc(100vw - 1rem);
+  background-color: #212529;
+}
+
+
+.fa-white {
+  color: white;
+}
+
+.screen {
+  margin-top: 5vh;
+  min-height: calc(100vh - 120px);
+  padding-top: 60px;
+}
+.scrolla{
+  translate: 0 -20px;
+  display: block;
+  height: 10px;
+}
+
+#profile {
   width: 138px;
   height: 138px;
+  animation: float;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s;
+  /* don't forget to set a duration! */
+}
+
+#card {
+  /*opacity: 0;*/
+  animation: wait 1s, fadeInRight 1s 1s;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s;
+  /* don't forget to set a duration! */
 }
