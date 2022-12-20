@@ -10,6 +10,9 @@
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+  .navbar-brand{
+    position: absolute !important;
+  }
 }
 
 h1,
@@ -51,4 +54,9 @@ main .container {
 .profile{
   width: 138px;
   height: 138px;
+}
+
+p{
+  padding: 10px 0 10px 0;
+  margin: 10px 0 0 0;
 }
