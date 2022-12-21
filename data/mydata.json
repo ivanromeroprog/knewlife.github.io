@@ -1,0 +1,119 @@
+{
+  "abilities": [
+    {
+      "list": [
+        {
+          "content": "Diseño y Desarrollo de aplicaciones Web y otro tipo de Software:\n•\tPHP 7/8\n•\tMySQL/María DB\n•\tSymfony Framework\n•\tHTML5, CSS3, Javascript\n•\tBootstrap, JQuery, HOTWIRE Stimulous\n•\tComposer, npm, yarn, webpack\n•\tGit, SSH\n•\tC#, .NET Platform, .NET Framework\n•\tMSSQL Server\n•\tConocimientos básicos de:\n  o\tDocker\n  o\tPython\n  o\tJava",
+          "title": "Diseño y Desarrollo de aplicaciones Web"
+        },
+        {
+          "content": "•\tMicrosoft Word\n•\tMicrosoft Excel\n•\tMicrosoft PowerPoint\n•\tMicrosoft Access\n•\tMicrosoft Project\n•\tMicrosoft Visio",
+          "title": "Manejo de Software de Oficina:"
+        },
+        {
+          "content": "•\tSolución de Problemas comunes.\n•\tMantenimiento de Equipos.\n•\tInstalación de Aplicaciones y Sistemas Operativos.\n•\tConocimientos de Redes.\n•\tAdministración de Bases de Datos.\n•\tManejo de Sistemas Windows y Linux.",
+          "title": "Mantenimiento y Reparación de PC"
+        }
+      ],
+      "title": "Aptitudes Técnicas"
+    },
+    {
+      "list": [
+        {
+          "content": "• Adobe Photoshop\n• Adobe Ilustrator",
+          "title": "Diseño Gráfico Digital"
+        },
+        {
+          "content": "•\tAdobe Premiere\n•\tAdobe After Effects\n•\tAdobe Encore",
+          "title": "Composición y Edición de Video"
+        }
+      ],
+      "title": "Aptitudes Artísticas"
+    },
+    {
+      "list": [
+        {
+          "content": "Castellano",
+          "title": "Lengua materna"
+        },
+        {
+          "content": "Castellano",
+          "title": "Lengua materna"
+        },
+        {
+          "content": "Si",
+          "title": "Permisos de conducción"
+        }
+      ],
+      "title": "Aptitudes Personales"
+    }
+  ],
+  "cell": "(03775) 15439547",
+  "description": "Adaptado a trabajar de manera multidisciplinaria integrando aspectos como el trabajo en equipo y la colaboración en actividades técnicas específicas.\nResponsable y capaz de organizarse de manera autónoma, reconociendo los propios límites, pero siempre buscando dar lo mejor en cada tarea realizada.\nSoy un apasionado por la informática y especialmente por la programación web. He trabajado con multitud de tecnologías a través de los años.",
+  "dob": {
+    "age": 30,
+    "date": "1987-11-08T16:00:00.000Z"
+  },
+  "email": "ivanromeroprog@gmail.com",
+  "experience": [
+    {
+      "activities": "Dictado de Cursos de programas de Oficina (Microsoft Office) y de introducción CorelDraw, Internet.",
+      "date_from": "04/2007",
+      "date_to": "12/2007",
+      "employer": "Biblioteca Popular “Sin Fronteras”, Juan Pujol 1911",
+      "position": "Instructor",
+      "sector": "Educación"
+    },
+    {
+      "activities": "Diseño y Programación de Aplicaciones Web.",
+      "date_from": "01/2008",
+      "date_to": "01/2010",
+      "employer": "",
+      "position": "Diseñador y Programador Web Independiente",
+      "sector": "Internet, Tecnología"
+    },
+    {
+      "activities": "Diseño y Retoque Fotográfico, Edición de Video, Mantenimiento de los Equipos de Trabajo.",
+      "date_from": "10/2009",
+      "date_to": "12/2019",
+      "employer": "JR Producciones, Eva Duarte de Perón 973",
+      "position": "Diseñador",
+      "sector": "Atención al Público, Diseño"
+    },
+    {
+      "activities": "Dictado de Clases en Tecnicaturas de Nivel Superior en asignaturas del área de informática.",
+      "date_from": "4/2015",
+      "date_to": "Actualidad",
+      "employer": "ISFD “Dr. Ramón J Cárcano”, Colón 880",
+      "position": "Docente",
+      "sector": "Educación"
+    },
+    {
+      "activities": "Coordinación de Actividades académicas en la carrera Tecnicatura Superior en Desarrollo de Software.",
+      "date_from": "11/2019",
+      "date_to": "Actualidad",
+      "employer": "ISFD “Dr. Ramón J Cárcano”, Colón 880",
+      "position": "Coordinador de Carrera - Tecnicatura Superior en Desarrollo de Software",
+      "sector": "Educación"
+    }
+  ],
+  "location": {
+    "city": "Monte Caseros",
+    "country": "Argentina",
+    "postcode": "3220",
+    "state": "Corrientes",
+    "street": {
+      "name": "José Pascual Arce ",
+      "number": 448
+    }
+  },
+  "name": {
+    "first": "Iván Yamil",
+    "last": "Romero",
+    "title": "Sr."
+  },
+  "nat": "AR",
+  "ocupation": "Web Developer, Docente",
+  "phone": "(272) 790-0888",
+  "picture": "https://randomuser.me/api/portraits/men/75.jpg"
+}

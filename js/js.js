@@ -137,5 +137,6 @@ window.addEventListener('load', (e) => {
         }
     );
 
+    //Call animation on load
     animateAll(domObj);
 })
