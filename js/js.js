@@ -1,87 +1,39 @@
-let data = {
-    "results": [
-        {
-            "gender": "female",
-            "name": {
-                "title": "Miss",
-                "first": "Jennie",
-                "last": "Nichols"
-            },
-            "location": {
-                "street": {
-                    "number": 8929,
-                    "name": "Valwood Pkwy"
-                },
-                "city": "Billings",
-                "state": "Michigan",
-                "country": "United States",
-                "postcode": "63104",
-                "coordinates": {
-                    "latitude": "-69.8246",
-                    "longitude": "134.8719"
-                },
-                "timezone": {
-                    "offset": "+9:30",
-                    "description": "Adelaide, Darwin"
-                }
-            },
-            "email": "jennie.nichols@example.com",
-            "login": {
-                "uuid": "7a0eed16-9430-4d68-901f-c0d4c1c3bf00",
-                "username": "yellowpeacock117",
-                "password": "addison",
-                "salt": "sld1yGtd",
-                "md5": "ab54ac4c0be9480ae8fa5e9e2a5196a3",
-                "sha1": "edcf2ce613cbdea349133c52dc2f3b83168dc51b",
-                "sha256": "48df5229235ada28389b91e60a935e4f9b73eb4bdb855ef9258a1751f10bdc5d"
-            },
-            "dob": {
-                "date": "1992-03-08T15:13:16.688Z",
-                "age": 30
-            },
-            "registered": {
-                "date": "2007-07-09T05:51:59.390Z",
-                "age": 14
-            },
-            "phone": "(272) 790-0888",
-            "cell": "(489) 330-2385",
-            "id": {
-                "name": "SSN",
-                "value": "405-88-3636"
-            },
-            "picture": {
-                "large": "https://randomuser.me/api/portraits/men/75.jpg",
-                "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
-                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
-            },
-            "nat": "US"
-        }
-    ],
-    "info": {
-        "seed": "56d27f4a53bd5441",
-        "results": 1,
-        "page": 1,
-        "version": "1.4"
-    }
-};
-
 //Helper functions
-//document.getElementById shortcut
+/**
+ * document.getElementById shortcut
+ * @param {string} el Element Id
+ * @returns {object} element
+ */
 function did(el) {
     return document.getElementById(el);
 }
 
-//document.getElementsByClassName shortcut
+/**
+ * document.getElementsByClassName shortcut
+ * @param {string} el Elements class name
+ * @returns {HTMLCollection} elements
+ */
 function dc(el) {
     return document.getElementsByClassName(el);
 }
 
-//console.log shortcut
+/**
+ * console.log shortcut
+ * @param {string} txt Text to be printed to the console
+ * @returns void
+ */
 function l(txt) {
     return console.log(txt)
 }
 
 //Animate CSS
+/**
+ * Trigger a animate.css animation by code.
+ * @param {object} element element to animate
+ * @param {string} animation animate.css animation name
+ * @param {string} prefix animation clasess prefix, default is animate__
+ * @returns 
+ */
 const animateCSS = (element, animation, prefix = 'animate__') =>
     // We create a Promise and return it
     new Promise((resolve, reject) => {
@@ -101,8 +53,18 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
     });
 
 
-//Functions and events
-//TODO: offsets
+//This project functions
+/**
+ * function to be called when scrolling the page, one call for every object to animate.
+ * @param {*object} obj object to be animated
+ * @param {object} refObj object wich position will be used as a reference to animate in/out obj
+ * @param {string} animationIn animate.css animation name to use when the obj appears 
+ * @param {string} animationOut animate.css animation name to use when the obj disappears  
+ * @param {number} duration duration of animations in secconds 
+ * @param {number} offsetIn offset in pixels from the bottom of the viewport to trigger animations
+ * @param {number} offsetOut offset in pixels from the top of the viewport to trigger animations
+ * @returns 
+ */
 function animateOnScroll(obj, refObj, animationIn, animationOut, duration, offsetIn, offsetOut) {
 
     let currentPositionBottom = (document.documentElement.scrollTop + window.innerHeight)-offsetIn;
@@ -143,9 +105,17 @@ function animateOnScroll(obj, refObj, animationIn, animationOut, duration, offse
             }
         }, { once: true });
     }
-
 }
 
+function animateAll(domObj){
+    animateOnScroll(domObj.profile, domObj.s1obj, 'fadeInLeft', 'fadeOutLeft',1.5, 100, 50);
+    animateOnScroll(domObj.card, domObj.s1obj, 'fadeInRight', 'fadeOutRight',1.5, 100, 50);
+    animateOnScroll(domObj.an1obj, domObj.s1obj, 'fadeInLeftBig', 'fadeOutLeft',1, 100, 50);
+    animateOnScroll(domObj.an2obj, domObj.s2obj, 'fadeInLeftBig', 'fadeOutLeft', 1, 100, 50);
+    animateOnScroll(domObj.an3obj, domObj.s3obj, 'fadeInLeftBig', 'fadeOutLeft',1, 100, 50);
+}
+
+//Events
 window.addEventListener('load', (e) => {
 
     //Objects to animate and references
@@ -160,15 +130,12 @@ window.addEventListener('load', (e) => {
         "s3obj": did('s3')
     }
 
+    //Call animation on scroll
     document.addEventListener('scroll',
         (e) => {
-            animateOnScroll(domObj.profile, domObj.s1obj, 'fadeInLeft', 'fadeOutLeft',1.5, 100, 50);
-            animateOnScroll(domObj.card, domObj.s1obj, 'fadeInRight', 'fadeOutRight',1.5, 100, 50);
-            animateOnScroll(domObj.an1obj, domObj.s1obj, 'fadeInLeftBig', 'fadeOutLeft',1, 100, 50);
-            animateOnScroll(domObj.an2obj, domObj.s2obj, 'fadeInLeftBig', 'fadeOutLeft', 1, 100, 50);
-            animateOnScroll(domObj.an3obj, domObj.s3obj, 'fadeInLeftBig', 'fadeOutLeft',1, 100, 50);
+            animateAll(domObj);
         }
     );
-    
-    window.location = '#sec1'
+
+    animateAll(domObj);
 })
