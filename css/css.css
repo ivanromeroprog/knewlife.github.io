@@ -46,13 +46,13 @@ body::-webkit-scrollbar-thumb {
 
 @keyframes float {
   0% {
-    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.5);
     transform: translatey(20px);
     opacity: 0;
   }
 
   100% {
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.9);
     transform: translatey(0px);
     opacity: 1;
   }
@@ -120,13 +120,13 @@ main .container h2 {
   height: 138px;
   animation: float;
   /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   /* don't forget to set a duration! */
 }
 
 #card {
   /*opacity: 0;*/
-  animation: wait 1s, fadeInRight 1s 1s;
+  animation: wait 0.5s, fadeInRight 0.5s 1s;
   /* referring directly to the animation's @keyframe declaration */
   animation-duration: 1s;
   /* don't forget to set a duration! */
