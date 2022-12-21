@@ -17,8 +17,8 @@ body::-webkit-scrollbar {
 
 body {
   scroll-behavior: smooth;
-  /*   overflow: auto;
-  overflow-x: hidden; */
+  overflow: auto;
+  overflow-x: hidden;
   scrollbar-width: thin;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
@@ -33,7 +33,7 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid var(--scrollbarBG);
 }
 
-/** Animations */
+/** Animations
 @keyframes wait {
   0% {
     opacity: 0;
@@ -57,6 +57,7 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
   }
 }
+ */
 
 /** Tags, classes, etc. */
 h1,
@@ -105,11 +106,12 @@ main .container h2 {
 }
 
 .screen {
-  margin-top: 5vh;
+  margin-top: 37px;
   min-height: calc(100vh - 110px);
   padding-top: 60px;
 }
-.scrolla{
+
+.scrolla {
   translate: 0 -20px;
   display: block;
   height: 10px;
@@ -118,16 +120,13 @@ main .container h2 {
 #profile {
   width: 138px;
   height: 138px;
-  animation: float;
+  /*animation: float;*/
   /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 0.5s;
+  /*animation-duration: 0.5s;*/
   /* don't forget to set a duration! */
 }
 
-#card {
-  /*opacity: 0;*/
+/* #card {
   animation: wait 0.5s, fadeInRight 0.5s 1s;
-  /* referring directly to the animation's @keyframe declaration */
   animation-duration: 1s;
-  /* don't forget to set a duration! */
-}
+} */

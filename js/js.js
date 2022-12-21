@@ -105,66 +105,53 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
 //TODO: offsets
 function animateOnScroll(obj, refObj, animationIn, animationOut, duration, offsetIn, offsetOut) {
 
-    let currentPositionBottom = (document.documentElement.scrollTop + window.innerHeight);
-    let currentPositionTop = (document.documentElement.scrollTop);
+    let currentPositionBottom = (document.documentElement.scrollTop + window.innerHeight)-offsetIn;
+    let currentPositionTop = (document.documentElement.scrollTop)+offsetOut;
     let refObjRect = refObj.getBoundingClientRect();
     let bodyRect = document.body.getBoundingClientRect();
     let refPostionStart = refObjRect.top - bodyRect.top;
-    let refPostionEnd = refPostionStart + refObjRect.height;
+    //let refPostionEnd = refPostionStart + refObjRect.height;
 
     //Set Animation duration
-    obj.style.setProperty('--animate-duration', duration);
+    obj.style.setProperty('--animate-duration', duration + 's');
 
-    //did('demo').style.top = refPostionStart + 'px';
-    //did('demo').style.height = (refObjRect.height) + 'px';
-    //console.clear();
-    // l('obj.Aniamted: ' + obj.animated);
-    // l('refPostionStart: ' + refPostionStart);
-    // l('refPostionStart+offsetIn: ' + (refPostionStart + offsetIn));
-    // l('refPostionEnd: ' + refPostionEnd);
-    // l('refPostionEnd+offsetOut: ' + (refPostionEnd + offsetOut));
-    // l('currentPositionBottom: ' + currentPositionBottom);
-    // l('currentPositionTop: ' + currentPositionTop);
-    // l('\n');
-
-    //TODO: DRYS
-    if (currentPositionTop > refPostionStart) {
-        if (!obj.animated)
+    //Animate in or out
+    if (currentPositionBottom > refPostionStart && currentPositionTop < refPostionStart) {
+        if (obj.animatedIn){
+            if(obj.animatedOut && !obj.setTimer){
+                obj.animateInOnEnd = true;
+            }
             return;
-    
-        l('animate Out Down');
-        animateCSS(obj, animationOut);
-        obj.addEventListener('animationend', () => {
-            obj.style.visibility = 'hidden';
-            obj.animated = false;
-            l(obj.style.visibility);
-        },{ once: true });
-    } else if (currentPositionBottom > refPostionStart) {
-        if (obj.animated)
-            return;
+        }
 
-        obj.animated = true;
-        l('animate In');
+        obj.animatedIn = true;
         animateCSS(obj, animationIn);
         obj.style.visibility = 'visible';
-        l(obj.style.visibility);
     } else {
-        if (!obj.animated)
+
+        if (!obj.animatedIn || obj.animatedOut)
             return;
 
-        l('animate Out Up');
+        obj.animatedOut = true;
         animateCSS(obj, animationOut);
         obj.addEventListener('animationend', () => {
-             obj.style.visibility = 'hidden';
-             obj.animated = false;
-             l(obj.style.visibility);
-        },{ once: true });
+            obj.animatedOut = false;
+            obj.animatedIn = false;
+            obj.style.visibility = 'hidden';
+            if(obj.animateInOnEnd){
+                animateOnScroll(obj, refObj, animationIn, animationOut, duration, offsetIn, offsetOut);
+            }
+        }, { once: true });
     }
 
 }
 
 window.addEventListener('load', (e) => {
+
+    //Objects to animate and references
     let domObj = {
+        "profile": did('profile'),
+        "card": did('card'),
         "an1obj": did('an1'),
         "s1obj": did('s1'),
         "an2obj": did('an2'),
@@ -173,16 +160,15 @@ window.addEventListener('load', (e) => {
         "s3obj": did('s3')
     }
 
-    //Set animation state to false
-    domObj.an1obj.animated = false;
-    domObj.an2obj.animated = false;
-    domObj.an3obj.animated = false;
-
-
-
-    setInterval((e) => {
-        animateOnScroll(domObj.an1obj, domObj.s1obj, 'fadeInLeftBig', 'fadeOutLeftBig','0.5s', 100, 100);
-        animateOnScroll(domObj.an2obj, domObj.s2obj, 'fadeInLeftBig', 'fadeOutLeftBig','0.5s', 100, 100);
-        animateOnScroll(domObj.an3obj, domObj.s3obj, 'fadeInLeftBig', 'fadeOutLeftBig','0.5s', 100, 100);
-    }, 100);
+    document.addEventListener('scroll',
+        (e) => {
+            animateOnScroll(domObj.profile, domObj.s1obj, 'fadeInLeft', 'fadeOutLeft',1.5, 100, 50);
+            animateOnScroll(domObj.card, domObj.s1obj, 'fadeInRight', 'fadeOutRight',1.5, 100, 50);
+            animateOnScroll(domObj.an1obj, domObj.s1obj, 'fadeInLeftBig', 'fadeOutLeft',1, 100, 50);
+            animateOnScroll(domObj.an2obj, domObj.s2obj, 'fadeInLeftBig', 'fadeOutLeft', 1, 100, 50);
+            animateOnScroll(domObj.an3obj, domObj.s3obj, 'fadeInLeftBig', 'fadeOutLeft',1, 100, 50);
+        }
+    );
+    
+    window.location = '#sec1'
 })
