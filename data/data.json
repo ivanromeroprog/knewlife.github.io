@@ -1,66 +1,143 @@
 {
-    "results": [
-        {
-            "gender": "male",
-            "name": {
-                "title": "Miss",
-                "first": "Jennie",
-                "last": "Nichols"
-            },
-            "location": {
-                "street": {
-                    "number": 8929,
-                    "name": "Valwood Pkwy"
-                },
-                "city": "Billings",
-                "state": "Michigan",
-                "country": "United States",
-                "postcode": "63104",
-                "coordinates": {
-                    "latitude": "-69.8246",
-                    "longitude": "134.8719"
-                },
-                "timezone": {
-                    "offset": "+9:30",
-                    "description": "Adelaide, Darwin"
-                }
-            },
-            "email": "jennie.nichols@example.com",
-            "login": {
-                "uuid": "7a0eed16-9430-4d68-901f-c0d4c1c3bf00",
-                "username": "yellowpeacock117",
-                "password": "addison",
-                "salt": "sld1yGtd",
-                "md5": "ab54ac4c0be9480ae8fa5e9e2a5196a3",
-                "sha1": "edcf2ce613cbdea349133c52dc2f3b83168dc51b",
-                "sha256": "48df5229235ada28389b91e60a935e4f9b73eb4bdb855ef9258a1751f10bdc5d"
-            },
-            "dob": {
-                "date": "1992-03-08T15:13:16.688Z",
-                "age": 30
-            },
-            "registered": {
-                "date": "2007-07-09T05:51:59.390Z",
-                "age": 14
-            },
-            "phone": "(272) 790-0888",
-            "cell": "(489) 330-2385",
-            "id": {
-                "name": "SSN",
-                "value": "405-88-3636"
-            },
-            "picture": {
-                "large": "https://randomuser.me/api/portraits/men/75.jpg",
-                "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
-                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
-            },
-            "nat": "US"
+    "name": {
+        "title": "Miss",
+        "first": "Jennie",
+        "last": "Nichols"
+    },
+    "location": {
+        "street": {
+            "number": 8929,
+            "name": "Valwood Pkwy"
+        },
+        "city": "Billings",
+        "state": "Michigan",
+        "country": "United States",
+        "postcode": "63104",
+        "coordinates": {
+            "latitude": "-69.8246",
+            "longitude": "134.8719"
+        },
+        "timezone": {
+            "offset": "+9:30",
+            "description": "Adelaide, Darwin"
         }
+    },
+    "email": "jennie.nichols@example.com",
+    "login": {
+        "uuid": "7a0eed16-9430-4d68-901f-c0d4c1c3bf00",
+        "username": "yellowpeacock117",
+        "password": "addison",
+        "salt": "sld1yGtd",
+        "md5": "ab54ac4c0be9480ae8fa5e9e2a5196a3",
+        "sha1": "edcf2ce613cbdea349133c52dc2f3b83168dc51b",
+        "sha256": "48df5229235ada28389b91e60a935e4f9b73eb4bdb855ef9258a1751f10bdc5d"
+    },
+    "dob": {
+        "date": "1992-03-08T15:13:16.688Z",
+        "age": 30
+    },
+    "registered": {
+        "date": "2007-07-09T05:51:59.390Z",
+        "age": 14
+    },
+    "phone": "(272) 790-0888",
+    "cell": "(489) 330-2385",
+    "id": {
+        "name": "SSN",
+        "value": "405-88-3636"
+    },
+    "picture": "https://randomuser.me/api/portraits/men/75.jpg",
+    "nat": "US",
+    "description": "Adaptado a trabajar de manera multidisciplinaria integrando aspectos como el trabajo en equipo y la colaboración en actividades técnicas específicas.\nResponsable y capaz de organizarse de manera autónoma, reconociendo los propios límites, pero siempre buscando dar lo mejor en cada tarea realizada.\nSoy un apasionado por la informática y especialmente por la programación web. He trabajado con multitud de tecnologías a través de los años.",
+    "experience": [
+      {
+        "date_from": "04/2007",
+        "date_to": "12/2007",
+        "employer": "Biblioteca Popular “Sin Fronteras”, Juan Pujol 1911",
+        "sector": "Educación",
+        "position": "Instructor",
+        "activities": "Dictado de Cursos de programas de Oficina (Microsoft Office) y de introducción CorelDraw, Internet."
+      },
+      {
+        "date_from": "01/2008",
+        "date_to": "01/2010",
+        "employer": "",
+        "sector": "Internet, Tecnología",
+        "position": "Diseñador y Programador Web Independiente",
+        "activities": "Diseño y Programación de Aplicaciones Web."
+      },
+      {
+        "date_from": "10/2009",
+        "date_to": "12/2019",
+        "employer": "JR Producciones, Eva Duarte de Perón 973",
+        "sector": "Atención al Público, Diseño",
+        "position": "Diseñador",
+        "activities": "Diseño y Retoque Fotográfico, Edición de Video, Mantenimiento de los Equipos de Trabajo."
+      },
+      {
+        "date_from": "4/2015",
+        "date_to": "Actualidad",
+        "employer": "ISFD “Dr. Ramón J Cárcano”, Colón 880",
+        "sector": "Educación",
+        "position": "Docente",
+        "activities": "Dictado de Clases en Tecnicaturas de Nivel Superior en asignaturas del área de informática."
+      },
+      {
+        "date_from": "11/2019",
+        "date_to": "Actualidad",
+        "employer": "ISFD “Dr. Ramón J Cárcano”, Colón 880",
+        "sector": "Educación",
+        "position": "Coordinador de Carrera - Tecnicatura Superior en Desarrollo de Software",
+        "activities": "Coordinación de Actividades académicas en la carrera Tecnicatura Superior en Desarrollo de Software."
+      }
     ],
-    "info": {
-        "seed": "56d27f4a53bd5441",
-        "results": 1,
-        "page": 1,
-        "version": "1.4"
-    }
+    "abilities": [
+      {
+        "title": "Aptitudes Técnicas",
+        "list": [
+          {
+            "title": "Diseño y Desarrollo de aplicaciones Web",
+            "content": "Diseño y Desarrollo de aplicaciones Web y otro tipo de Software:\n•\tPHP 7/8\n•\tMySQL/María DB\n•\tSymfony Framework\n•\tHTML5, CSS3, Javascript\n•\tBootstrap, JQuery, HOTWIRE Stimulous\n•\tComposer, npm, yarn, webpack\n•\tGit, SSH\n•\tC#, .NET Platform, .NET Framework\n•\tMSSQL Server\n•\tConocimientos básicos de:\n  o\tDocker\n  o\tPython\n  o\tJava"
+          },
+          {
+            "title": "Manejo de Software de Oficina:",
+            "content": "•\tMicrosoft Word\n•\tMicrosoft Excel\n•\tMicrosoft PowerPoint\n•\tMicrosoft Access\n•\tMicrosoft Project\n•\tMicrosoft Visio"
+          },
+          {
+            "title": "Mantenimiento y Reparación de PC",
+            "content": "•\tSolución de Problemas comunes.\n•\tMantenimiento de Equipos.\n•\tInstalación de Aplicaciones y Sistemas Operativos.\n•\tConocimientos de Redes.\n•\tAdministración de Bases de Datos.\n•\tManejo de Sistemas Windows y Linux."
+          }
+        ]
+      },
+      {
+        "title": "Aptitudes Artísticas",
+        "list": [
+          {
+            "title": "Diseño Gráfico Digital",
+            "content": "• Adobe Photoshop\n• Adobe Ilustrator"
+          },
+          {
+            "title": "Composición y Edición de Video",
+            "content": "•\tAdobe Premiere\n•\tAdobe After Effects\n•\tAdobe Encore"
+          }
+        ]
+      },
+      {
+        "title": "Aptitudes Personales",
+        "list": [
+          {
+            "title": "Lengua materna",
+            "content": "Castellano"
+          },
+          {
+            "title": "Lengua materna",
+            "content": "Castellano"
+          },
+          {
+            "title": "Permisos de conducción",
+            "content": "Si"
+          }
+        ]
+      }
+    ]
 }
