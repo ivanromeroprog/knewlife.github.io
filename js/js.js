@@ -118,7 +118,7 @@ function animateAll(domObj){
 //Events
 window.addEventListener('load', (e) => {
 
-    //Objects to animate and references
+    // asd Objects to animate and references
     let domObj = {
         "profile": did('profile'),
         "card": did('card'),
