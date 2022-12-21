@@ -106,7 +106,7 @@ main .container h2 {
 
 .screen {
   margin-top: 5vh;
-  min-height: calc(100vh - 120px);
+  min-height: calc(100vh - 110px);
   padding-top: 60px;
 }
 .scrolla{
