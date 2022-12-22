@@ -48,7 +48,7 @@
       "title": "Aptitudes Personales"
     }
   ],
-  "cell": "(03775) 15439547",
+  "cell": "+549 (3775) 439547",
   "description": "Adaptado a trabajar de manera multidisciplinaria integrando aspectos como el trabajo en equipo y la colaboración en actividades técnicas específicas.\nResponsable y capaz de organizarse de manera autónoma, reconociendo los propios límites, pero siempre buscando dar lo mejor en cada tarea realizada.\nSoy un apasionado por la informática y especialmente por la programación web. He trabajado con multitud de tecnologías a través de los años.",
   "dob": {
     "age": 30,
@@ -114,6 +114,6 @@
   },
   "nat": "AR",
   "ocupation": "Web Developer, Docente",
-  "phone": "(272) 790-0888",
-  "picture": "https://randomuser.me/api/portraits/men/75.jpg"
+  "phone": "-",
+  "picture": "img/prof.jpg"
 }

@@ -23,9 +23,9 @@
     date: 1987-11-08T16:00:00.000Z
     age: 30
   }
-  phone: (272) 790-0888
+  phone: -
   cell: (03775) 15439547
-  picture: https://randomuser.me/api/portraits/men/75.jpg
+  picture: img/prof.jpg
   nat: AR
   ocupation: Web Developer, Docente
   description:'''

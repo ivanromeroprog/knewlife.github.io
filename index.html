@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es" class="h-100">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,18 +19,21 @@
 	<script src="https://kit.fontawesome.com/26788c528f.js" crossorigin="anonymous"></script>
 	<script src="js/js.js"></script>
 </head>
+
 <body class="d-flex flex-column h-100">
 	<!-- <div id="demo" style="position: absolute; width: 100px; height: 100px; z-index: 9999; background-color: blueviolet;"></div> -->
 	<header>
 		<!-- Fixed navbar -->
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbar-example2">
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbar1">
 
 			<div class="container-fluid d-flex">
 				<a class="navbar-brand" href="#">
 					<i class="fa-solid fa-user-tie"></i>
-					<span id="data-title">...</span></a>
+					<span id="data-title" class="placeholder-glow">
+						<span class="placeholder col-12 placeholder-sm rounded"></span>
+					</span></a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-					aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					aria-controls="navbarCollapse" aria-expanded="false" aria-label="Abrir menú de navegación">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse text-center justify-content-center" id="navbarCollapse">
@@ -52,99 +56,123 @@
 	<main class="flex-shrink-0">
 		<div class="container">
 
-			<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
+			<div data-bs-spy="scroll" data-bs-target="#navbar1" data-bs-offset="0" class="scrollspy-example"
 				tabindex="0">
 
 				<a id="sec1" name="sec1" class="scrolla"></a>
 				<div class="screen" id="s1">
-					
+
 					<h2 id="an1">
 						<i class="fa-solid fa-address-card fa-white"></i>
 						Información personal
 					</h2>
 					<div class="d-flex justify-content-evenly align-items-center">
 
-						<img src="https://randomuser.me/api/portraits/men/83.jpg" alt="Foto"
-							class="img-thumbnail" id="profile">
+						<div id="profile"><img alt="Foto" class="img-thumbnail" id="data-picture"></div>
 
-						<div class="card bg-dark" style="width: 18rem;" id="card">
+						<div class="card bg-dark" id="card">
 							<div class="card-body">
-								<h5 class="card-title" id="data-name">...</h5>
-								<h6 class="card-subtitle mb-2 text-muted">Web Developer</h6>
-								<p class="card-text">Some quick example text to build on the card title and make up the
-									bulk of the card's content.</p>
+								<h5 class="card-title placeholder-glow" id="data-name"><span
+										class="placeholder col-6 placeholder-sm rounded"></span></h5>
+								<h6 class="card-subtitle mb-2 text-muted placeholder-glow" id="data-ocupation"><span
+										class="placeholder col-6 placeholder-sm rounded"></h6>
+								<div class="card-text placeholder-glow" id="data-personal">
+									<span class="placeholder col-12 placeholder-sm rounded"></span>
+									<span class="placeholder col-10 placeholder-sm rounded"></span>
+									<span class="placeholder col-6 placeholder-sm rounded"></span>
+								</div>
 							</div>
 						</div>
 
 					</div>
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque arcu mauris, gravida vitae
-						convallis non, fermentum nec turpis. Nam sed semper nulla. Aliquam erat volutpat. Nam vestibulum
-						mauris vitae odio tincidunt blandit id non justo. Aenean suscipit, purus vulputate mattis
-						rhoncus, nisi ante lobortis nunc, semper tempus est lacus eu augue. Duis interdum massa in magna
-						venenatis aliquet. Sed pellentesque velit odio. Vivamus accumsan ex vitae odio condimentum
-						facilisis dapibus sed velit. Nullam in pellentesque enim. Sed non erat in nibh rhoncus volutpat
-						quis non nisl. Phasellus vitae malesuada dui. Quisque quis massa ut ipsum elementum feugiat at
-						id neque. Phasellus lacus ex, congue ut tempor sit amet, iaculis a purus.
-						Aenean ullamcorper orci eget est gravida consequat. Donec et aliquet velit. Donec at commodo
-						eros. Ut tellus ipsum, consequat in egestas in, cursus ac sem. Aenean nisl massa, tincidunt at
-						quam eu, laoreet elementum erat. Vivamus iaculis turpis vitae quam lacinia, quis ullamcorper
-						nunc lacinia. Mauris vitae sapien a eros viverra commodo. Curabitur nec interdum elit. Proin sed
-						nunc justo.</p>
+					<div id="data-description" class="placeholder-glow text-justify">
+						<span class="placeholder col-12 placeholder-sm rounded"></span>
+						<span class="placeholder col-10 placeholder-sm rounded"></span>
+						<span class="placeholder col-10 placeholder-sm rounded"></span>
+						<span class="placeholder col-12 placeholder-sm rounded"></span>
+						<span class="placeholder col-10 placeholder-sm rounded"></span>
+						<span class="placeholder col-12 placeholder-sm rounded"></span>
+						<span class="placeholder col-10 placeholder-sm rounded"></span>
+						<span class="placeholder col-10 placeholder-sm rounded"></span>
+						<span class="placeholder col-6 placeholder-sm rounded"></span>
+					</div>
 
 				</div>
 				<a id="sec2" name="sec2" class="scrolla"></a>
 				<div class="screen" id="s2">
-					
+
 					<h2 id="an2">
 						<i class="fa-solid fa-laptop-code fa-white"></i>
-						Experiencia 
+						Experiencia
 					</h2>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque arcu mauris, gravida vitae
-						convallis non, fermentum nec turpis. Nam sed semper nulla. Aliquam erat volutpat. Nam vestibulum
-						mauris vitae odio tincidunt blandit id non justo. Aenean suscipit, purus vulputate mattis
-						rhoncus, nisi ante lobortis nunc, semper tempus est lacus eu augue. Duis interdum massa in magna
-						venenatis aliquet. Sed pellentesque velit odio. Vivamus accumsan ex vitae odio condimentum
-						facilisis dapibus sed velit. Nullam in pellentesque enim. Sed non erat in nibh rhoncus volutpat
-						quis non nisl. Phasellus vitae malesuada dui. Quisque quis massa ut ipsum elementum feugiat at
-						id neque. Phasellus lacus ex, congue ut tempor sit amet, iaculis a purus. Cras mollis mi ut
-						hendrerit lacinia. Duis justo nulla, mollis sed pharetra sed, accumsan id leo.
-
-						Praesent molestie quam nulla, et rhoncus mauris ultrices sit amet. Aliquam sagittis gravida
-						urna, nec pellentesque nulla consequat in. Etiam pulvinar mauris tincidunt, vestibulum purus
-						consectetur, gravida lorem. Suspendisse sed diam urna. Vivamus dignissim sagittis sapien quis
-						pellentesque. Phasellus sit amet lorem non justo ullamcorper vestibulum. Nam egestas varius
-						neque sodales vulputate. Sed id purus massa. Quisque id efficitur massa. Morbi in mollis turpis.
-
-						Aenean ullamcorper orci eget est gravida consequat. Donec et aliquet velit. Donec at commodo
-						eros. Ut tellus ipsum, consequat in egestas in, cursus ac sem. Aenean nisl massa, tincidunt at
-						quam eu, laoreet elementum erat. Vivamus iaculis turpis vitae quam lacinia, quis ullamcorper
-						nunc lacinia. Mauris vitae sapien a eros viverra commodo. Curabitur nec interdum elit. Proin sed
-						nunc justo.</p>
+					<div id="data-experience" class="placeholder-glow">
+						<div class="card bg-dark placeholder-glow" id="data-experience-template">
+							<div class="card-header data-employer">
+								<span class="placeholder col-6 placeholder-sm rounded"></span>
+							</div>
+							<div class="card-body">
+								<h5 class="card-title data-position">
+									<span class="placeholder col-7 placeholder-sm rounded"></span>
+								</h5>
+								<p class="card-text data-position-description">
+									<span class="placeholder col-10 placeholder-sm rounded"></span>
+									<span class="placeholder col-8 placeholder-sm rounded"></span>
+								</p>
+							</div>
+						</div>
+						<div class="card bg-dark placeholder-glow">
+							<div class="card-header data-employer">
+								<span class="placeholder col-6 placeholder-sm rounded"></span>
+							</div>
+							<div class="card-body">
+								<h5 class="card-title data-position">
+									<span class="placeholder col-7 placeholder-sm rounded"></span>
+								</h5>
+								<p class="card-text data-position-description">
+									<span class="placeholder col-10 placeholder-sm rounded"></span>
+									<span class="placeholder col-8 placeholder-sm rounded"></span>
+								</p>
+							</div>
+						</div>
+						<div class="card bg-dark placeholder-glow">
+							<div class="card-header data-employer">
+								<span class="placeholder col-6 placeholder-sm rounded"></span>
+							</div>
+							<div class="card-body">
+								<h5 class="card-title data-position">
+									<span class="placeholder col-7 placeholder-sm rounded"></span>
+								</h5>
+								<p class="card-text data-position-description">
+									<span class="placeholder col-10 placeholder-sm rounded"></span>
+									<span class="placeholder col-8 placeholder-sm rounded"></span>
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<a id="sec3" name="sec3" class="scrolla"></a>
 				<div class="screen" id="s3">
-					
-					<h2 id="an3"><i class="fa-solid fa-person-chalkboard fa-white"></i> Habilidades</h2>
-					<p>
-						Praesent molestie quam nulla, et rhoncus mauris ultrices sit amet. Aliquam sagittis gravida
-						urna, nec pellentesque nulla consequat in. Etiam pulvinar mauris tincidunt, vestibulum purus
-						consectetur, gravida lorem. Suspendisse sed diam urna. Vivamus dignissim sagittis sapien quis
-						pellentesque. Phasellus sit amet lorem non justo ullamcorper vestibulum. Nam egestas varius
-						neque sodales vulputate. Sed id purus massa. Quisque id efficitur massa. Morbi in mollis turpis.
 
-						Aenean ullamcorper orci eget est gravida consequat. Donec et aliquet velit. Donec at commodo
-						eros. Ut tellus ipsum, consequat in egestas in, cursus ac sem. Aenean nisl massa, tincidunt at
-						quam eu, laoreet elementum erat. Vivamus iaculis turpis vitae quam lacinia, quis ullamcorper
-						nunc lacinia. Mauris vitae sapien a eros viverra commodo. Curabitur nec interdum elit. Proin sed
-						nunc justo.</p>
+					<h2 id="an3"><i class="fa-solid fa-person-chalkboard fa-white"></i> Habilidades</h2>
+					<div id="data-abilities" class="placeholder-glow">
+						<span class="placeholder col-12 placeholder-sm rounded"></span>
+						<span class="placeholder col-10 placeholder-sm rounded"></span>
+						<span class="placeholder col-10 placeholder-sm rounded"></span>
+						<span class="placeholder col-12 placeholder-sm rounded"></span>
+						<span class="placeholder col-10 placeholder-sm rounded"></span>
+						<span class="placeholder col-12 placeholder-sm rounded"></span>
+						<span class="placeholder col-10 placeholder-sm rounded"></span>
+						<span class="placeholder col-10 placeholder-sm rounded"></span>
+						<span class="placeholder col-6 placeholder-sm rounded"></span>
+					</div>
 
 				</div>
 			</div>
 	</main>
 	<footer class="footer mt-auto py-2 bg-dark text-center">
-			<span class="text-muted">&copy; <a href="https://linktr.ee/ivanromeroprog" class="link-secondary text-decoration-none" target="_blank">Iván Y. Romero</a></span>
+		<span class="text-muted">&copy; <a href="https://linktr.ee/ivanromeroprog"
+				class="link-secondary text-decoration-none" target="_blank">Iván Y. Romero</a></span>
 	</footer>
 </body>
 </body>

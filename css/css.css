@@ -1,10 +1,3 @@
-/** Big screens */
-@media (min-width: 768px) {
-  .navbar-brand {
-    position: absolute !important;
-  }
-}
-
 /** Scrollbars */
 html {
   --scrollbarBG: #1b1b1b;
@@ -21,6 +14,7 @@ body {
   overflow-x: hidden;
   scrollbar-width: thin;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  
 }
 
 body::-webkit-scrollbar-track {
@@ -32,32 +26,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 6px;
   border: 3px solid var(--scrollbarBG);
 }
-
-/** Animations
-@keyframes wait {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes float {
-  0% {
-    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.5);
-    transform: translatey(20px);
-    opacity: 0;
-  }
-
-  100% {
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.9);
-    transform: translatey(0px);
-    opacity: 1;
-  }
-}
- */
 
 /** Tags, classes, etc. */
 h1,
@@ -74,9 +42,9 @@ main {
   color: white;
 }
 
-p {
-  padding: 10px 0 10px 0;
-  margin: 10px 0 0 0;
+main .container p {
+  padding: 5px 0 5px 0;
+  margin: 0;
 }
 
 main .container {
@@ -95,7 +63,7 @@ main .container h2 {
   left: 0;
   translate: 0 -70px;
   text-align: center;
-  width: calc(100vw - 1rem);
+  width: 100vw;
   background-color: #212529;
   visibility: hidden;
 }
@@ -107,8 +75,10 @@ main .container h2 {
 
 .screen {
   margin-top: 37px;
-  min-height: calc(100vh - 110px);
+  min-height: 105vh;
   padding-top: 60px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .scrolla {
@@ -120,13 +90,35 @@ main .container h2 {
 #profile {
   width: 138px;
   height: 138px;
-  /*animation: float;*/
-  /* referring directly to the animation's @keyframe declaration */
-  /*animation-duration: 0.5s;*/
-  /* don't forget to set a duration! */
+  display: block;
+  visibility: hidden;
 }
 
-/* #card {
-  animation: wait 0.5s, fadeInRight 0.5s 1s;
-  animation-duration: 1s;
-} */
+#data-picture {
+
+  display: block;
+}
+
+#card {
+  visibility: hidden;
+  font-size: 0.8em;
+}
+
+#data-description{
+  margin-top: 20px;
+}
+
+/** Big screens */
+@media (min-width: 768px) {
+  .navbar-brand {
+    position: absolute !important;
+  }
+
+  main .container h2 {
+    width: calc(100vw - 1rem);
+  }
+
+  #card{
+    font-size: 1em;
+  }
+}
