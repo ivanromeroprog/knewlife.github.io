@@ -108,6 +108,10 @@ main .container h2 {
   margin-top: 20px;
 }
 
+#icon1,#icon2,#icon3{
+  visibility: hidden;
+}
+
 /** Big screens */
 @media (min-width: 768px) {
   .navbar-brand {

@@ -137,9 +137,9 @@ function animateAll(domObj) {
     animateOnScroll(domObj.an1obj, domObj.s1obj, 'fadeInLeftBig', 'fadeOutLeft', 1, 100, 50);
     animateOnScroll(domObj.an2obj, domObj.s2obj, 'fadeInLeftBig', 'fadeOutLeft', 1, 100, 50);
     animateOnScroll(domObj.an3obj, domObj.s3obj, 'fadeInLeftBig', 'fadeOutLeft', 1, 100, 50);
-    animateOnScroll(domObj.icon1, domObj.icon1, 'fadeInLeftBig', 'fadeOutLeft', 1, 100, 50);
-    animateOnScroll(domObj.icon2, domObj.icon1, 'fadeInDown', 'fadeOutDown', 1, 100, 50);
-    animateOnScroll(domObj.icon3, domObj.icon1, 'fadeInRightBig', 'fadeOutRight', 1, 100, 50);
+    animateOnScroll(domObj.icon1, domObj.icon1, 'fadeInLeftBig', 'fadeOutLeft', 1, 150, 50);
+    animateOnScroll(domObj.icon2, domObj.icon1, 'fadeInDown', 'fadeOutDown', 1, 150, 50);
+    animateOnScroll(domObj.icon3, domObj.icon1, 'fadeInRightBig', 'fadeOutRight', 1, 150, 50);
 }
 
 /**
