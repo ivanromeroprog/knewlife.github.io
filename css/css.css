@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
   scrollbar-width: thin;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
-  
+  background: url('../img/bk.jpg') fixed;
 }
 
 body::-webkit-scrollbar-track {
@@ -38,7 +38,7 @@ h6 {
 }
 
 main {
-  background-color: black;
+  /*background-color: black;*/
   color: white;
 }
 
@@ -64,7 +64,7 @@ main .container h2 {
   translate: 0 -70px;
   text-align: center;
   width: 100vw;
-  background-color: #212529;
+  background-color: #212529aa;
   visibility: hidden;
 }
 
