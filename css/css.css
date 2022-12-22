@@ -1,10 +1,3 @@
-/** Big screens */
-@media (min-width: 768px) {
-  .navbar-brand {
-    position: absolute !important;
-  }
-}
-
 /** Scrollbars */
 html {
   --scrollbarBG: #1b1b1b;
@@ -21,6 +14,7 @@ body {
   overflow-x: hidden;
   scrollbar-width: thin;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  background: url('../img/bk.jpg') fixed;
 }
 
 body::-webkit-scrollbar-track {
@@ -33,32 +27,6 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid var(--scrollbarBG);
 }
 
-/** Animations
-@keyframes wait {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes float {
-  0% {
-    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.5);
-    transform: translatey(20px);
-    opacity: 0;
-  }
-
-  100% {
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.9);
-    transform: translatey(0px);
-    opacity: 1;
-  }
-}
- */
-
 /** Tags, classes, etc. */
 h1,
 h2,
@@ -70,13 +38,15 @@ h6 {
 }
 
 main {
-  background-color: black;
+  /*background-color: black;*/
   color: white;
+  max-width: 100%;
+  overflow: hidden;
 }
 
-p {
-  padding: 10px 0 10px 0;
-  margin: 10px 0 0 0;
+main .container p {
+  padding: 5px 0 5px 0;
+  margin: 0;
 }
 
 main .container {
@@ -95,8 +65,8 @@ main .container h2 {
   left: 0;
   translate: 0 -70px;
   text-align: center;
-  width: calc(100vw - 1rem);
-  background-color: #212529;
+  width: 100vw;
+  background-color: #212529aa;
   visibility: hidden;
 }
 
@@ -107,7 +77,7 @@ main .container h2 {
 
 .screen {
   margin-top: 37px;
-  min-height: calc(100vh - 110px);
+  min-height: 105vh;
   padding-top: 60px;
 }
 
@@ -117,16 +87,63 @@ main .container h2 {
   height: 10px;
 }
 
+a.contact-link{
+  color:#f9004d;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+a.link-light{
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s !important;
+}
+a.contact-link:hover, a.link-light:hover{
+  color: #ff97b6 !important;
+}
+
 #profile {
   width: 138px;
   height: 138px;
-  /*animation: float;*/
-  /* referring directly to the animation's @keyframe declaration */
-  /*animation-duration: 0.5s;*/
-  /* don't forget to set a duration! */
+  display: block;
+  visibility: hidden;
 }
 
-/* #card {
-  animation: wait 0.5s, fadeInRight 0.5s 1s;
-  animation-duration: 1s;
-} */
+#data-picture {
+
+  display: block;
+}
+
+#card {
+  visibility: hidden;
+  font-size: 0.8em;
+}
+
+#data-description{
+  margin-top: 20px;
+}
+
+#data-experience .card{
+  margin-bottom: 10px;
+}
+
+#icon1,#icon2,#icon3{
+  visibility: hidden;
+}
+
+/** Big screens */
+@media (min-width: 768px) {
+  .navbar-brand {
+    position: absolute !important;
+  }
+
+  main .container h2 {
+    width: calc(100vw - 1rem);
+  }
+
+  #card{
+    font-size: 1em;
+  }
+}

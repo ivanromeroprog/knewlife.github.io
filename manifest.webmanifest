@@ -1,0 +1,15 @@
+{
+    "background_color": "red",
+    "description": "CV",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "css/log.png",
+        "sizes": "140x113",
+        "type": "image/png"
+      }
+    ],
+    "name": "CV",
+    "short_name": "CV",
+    "start_url": "/cv/index.html"
+  }

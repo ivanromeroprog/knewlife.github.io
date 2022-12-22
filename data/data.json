@@ -4,6 +4,7 @@
         "first": "Jennie",
         "last": "Nichols"
     },
+    "ocupation": "Web Developer",
     "location": {
         "street": {
             "number": 8929,
@@ -23,6 +24,7 @@
         }
     },
     "email": "jennie.nichols@example.com",
+    "url": "https://www.google.com",
     "login": {
         "uuid": "7a0eed16-9430-4d68-901f-c0d4c1c3bf00",
         "username": "yellowpeacock117",
@@ -50,14 +52,7 @@
     "nat": "US",
     "description": "Adaptado a trabajar de manera multidisciplinaria integrando aspectos como el trabajo en equipo y la colaboración en actividades técnicas específicas.\nResponsable y capaz de organizarse de manera autónoma, reconociendo los propios límites, pero siempre buscando dar lo mejor en cada tarea realizada.\nSoy un apasionado por la informática y especialmente por la programación web. He trabajado con multitud de tecnologías a través de los años.",
     "experience": [
-      {
-        "date_from": "04/2007",
-        "date_to": "12/2007",
-        "employer": "Biblioteca Popular “Sin Fronteras”, Juan Pujol 1911",
-        "sector": "Educación",
-        "position": "Instructor",
-        "activities": "Dictado de Cursos de programas de Oficina (Microsoft Office) y de introducción CorelDraw, Internet."
-      },
+
       {
         "date_from": "01/2008",
         "date_to": "01/2010",
@@ -66,14 +61,7 @@
         "position": "Diseñador y Programador Web Independiente",
         "activities": "Diseño y Programación de Aplicaciones Web."
       },
-      {
-        "date_from": "10/2009",
-        "date_to": "12/2019",
-        "employer": "JR Producciones, Eva Duarte de Perón 973",
-        "sector": "Atención al Público, Diseño",
-        "position": "Diseñador",
-        "activities": "Diseño y Retoque Fotográfico, Edición de Video, Mantenimiento de los Equipos de Trabajo."
-      },
+
       {
         "date_from": "4/2015",
         "date_to": "Actualidad",
