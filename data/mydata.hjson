@@ -28,11 +28,10 @@
   picture: img/prof.jpg
   nat: AR
   ocupation: Web Developer, Docente
-  description:'''
-        Adaptado a trabajar de manera multidisciplinaria integrando aspectos como el trabajo en equipo y la colaboración en actividades técnicas específicas.
-        Responsable y capaz de organizarse de manera autónoma, reconociendo los propios límites, pero siempre buscando dar lo mejor en cada tarea realizada.
-        Soy un apasionado por la informática y especialmente por la programación web. He trabajado con multitud de tecnologías a través de los años.
-        '''
+  description:'''Siempre dispuesto a trabajar de manera multidisciplinaria y en equipo para desarrollar actividades técnicas específicas.
+Soy responsable y capaz de organizarme de manera autónoma, reconociendo mis propios límites, pero siempre buscando dar lo mejor en cada tarea realizada.
+Siento pasión por la informática y especialmente por el desarrollo web. He trabajado con multitud de tecnologías a través de los años.'''
+  url: https://linktr.ee/ivanromeroprog
   experience:
   [
     {
@@ -46,7 +45,7 @@
     {
       date_from: 01/2008
       date_to: 01/2010
-      employer: ""
+      employer: "Independiente"
       sector: Internet, Tecnología
       position: Diseñador y Programador Web Independiente
       activities: Diseño y Programación de Aplicaciones Web.
@@ -61,7 +60,7 @@
     }
     {
       date_from: 4/2015
-      date_to: Actualidad
+      date_to: la actualidad
       employer: ISFD “Dr. Ramón J Cárcano”, Colón 880
       sector: Educación
       position: Docente
@@ -69,7 +68,7 @@
     }
     {
       date_from: 11/2019
-      date_to: Actualidad
+      date_to: la actualidad
       employer: ISFD “Dr. Ramón J Cárcano”, Colón 880
       sector: Educación
       position: Coordinador de Carrera - Tecnicatura Superior en Desarrollo de Software

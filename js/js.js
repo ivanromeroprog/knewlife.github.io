@@ -1,76 +1,4 @@
-//Helper functions
-/**
- * document.getElementById shortcut
- * @param {string} el Element Id
- * @returns {object} element
- */
-function did(el) {
-    return document.getElementById(el);
-}
 
-/**
- * document.getElementsByClassName shortcut
- * @param {string} el Elements class name
- * @returns {HTMLCollection} elements
- */
-function dc(el) {
-    return document.getElementsByClassName(el);
-}
-
-/**
- * console.log shortcut
- * @param {string} txt Text to be printed to the console
- * @returns void
- */
-function l(txt) {
-    return console.log(txt)
-}
-
-/**
- * Escape special regex characters from string
- * @param {string} str string to escape
- * @returns 
- */
-function escapeRegExp(str) {
-    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
-}
-
-/**
- * Replace all ocurences of [find] in [str] with [replace]
- * @param {string} str string in wich the search and replace will be performed
- * @param {string} find text to find
- * @param {string} replace text ro replace [find] ocurrences
- * @returns 
- */
-function replaceAll(str, find, replace) {
-    return str.replace(new RegExp(escapeRegExp(find), 'g'), replace);
-}
-
-//Animate CSS
-/**
- * Trigger a animate.css animation by code.
- * @param {object} element element to animate
- * @param {string} animation animate.css animation name
- * @param {string} prefix animation clasess prefix, default is animate__
- * @returns 
- */
-const animateCSS = (element, animation, prefix = 'animate__') =>
-    // We create a Promise and return it
-    new Promise((resolve, reject) => {
-        const animationName = `${prefix}${animation}`;
-        const node = element;
-
-        node.classList.add(`${prefix}animated`, animationName);
-
-        // When the animation ends, we clean the classes and resolve the Promise
-        function handleAnimationEnd(event) {
-            event.stopPropagation();
-            node.classList.remove(`${prefix}animated`, animationName);
-            resolve('Animation ended');
-        }
-
-        node.addEventListener('animationend', handleAnimationEnd, { once: true });
-    });
 
 
 //This project functions
@@ -128,7 +56,7 @@ function animateOnScroll(obj, refObj, animationIn, animationOut, duration, offse
 }
 
 /**
- * 
+ * Animate all objects using animateOnScroll function
  * @param {object} domObj objects to animate
  */
 function animateAll(domObj) {
@@ -137,47 +65,48 @@ function animateAll(domObj) {
     animateOnScroll(domObj.an1obj, domObj.s1obj, 'fadeInLeftBig', 'fadeOutLeft', 1, 100, 50);
     animateOnScroll(domObj.an2obj, domObj.s2obj, 'fadeInLeftBig', 'fadeOutLeft', 1, 100, 50);
     animateOnScroll(domObj.an3obj, domObj.s3obj, 'fadeInLeftBig', 'fadeOutLeft', 1, 100, 50);
-    animateOnScroll(domObj.icon1, domObj.icon1, 'fadeInLeftBig', 'fadeOutLeft', 1, 150, 50);
-    animateOnScroll(domObj.icon2, domObj.icon1, 'fadeInDown', 'fadeOutDown', 1, 150, 50);
-    animateOnScroll(domObj.icon3, domObj.icon1, 'fadeInRightBig', 'fadeOutRight', 1, 150, 50);
+    animateOnScroll(domObj.icon1, domObj.iconref, 'backInLeft', 'fadeOutLeft', 1.25, -100, 50);
+    animateOnScroll(domObj.icon2, domObj.iconref, 'zoomIn', 'fadeOut', 0.75, -100, 50);
+    animateOnScroll(domObj.icon3, domObj.iconref, 'backInRight', 'fadeOutRight', 1.25, -100, 50);
 }
 
 /**
- * 
+ * Load data from json file
  * @param {string} url url of json data
  */
 function loadData(url) {
+
     fetch(url)
         .then(response => response.json())
         .then(data => {
             dataLoadCompleted(data);
-        })
-        /*
+        })/*
         .catch((e) => {
             alert('Error loading data.');
         })*/;
 }
 
 /**
- * 
+ * Handler function called when json data is ready
  * @param {object} data json data
  */
 function dataLoadCompleted(data) {
 
     //Personal information
+    document.title = data.name.last + ", " + data.name.first + ' - ' + 'Curriculum Vitae';
     did('data-name').innerText = did('data-title').innerText = data.name.last + ", " + data.name.first;
     did('data-ocupation').innerText = data.ocupation;
-    did('data-description').innerHTML = '<p>'+replaceAll(data.description,'\n','</p><p>')+'</p>';
+    did('data-description').innerHTML = '<p>' + replaceAll(data.description, '\n', '</p><p>') + '</p>';
     did('data-picture').src = data.picture;
     did('data-personal').innerHTML =
 
-
         'Teléfono: <a class="link-light" href="tel:' + data.cell + '">' + data.cell + '</a>'
         + '<br>' +
-        'E-mail: <a class="link-light" href="mailto:' + data.email + '">' + data.email + '</a>';
-    + '<br>' +
-        data.location.city + ', ' + data.location.state + ', ' + data.location.country;
-
+        'E-mail: <a class="link-light" href="mailto:' + data.email + '">' + data.email + '</a>'
+        + '<br>' +
+        data.location.city + ', ' + data.location.state + ', ' + data.location.country
+        ;
+    did('data-url').href = data.url;
 
     //Experience
 
@@ -197,13 +126,28 @@ function dataLoadCompleted(data) {
     }
 
     //Add data
-    data.experience.forEach(element => {
+    data.experience.forEach(d => {
         newexp = template.cloneNode(true);
+        newexp.getElementsByClassName('data-employer')[0].innerText = d.employer;
+        newexp.getElementsByClassName('data-position')[0].innerText = d.position;
+        newexp.getElementsByClassName('data-position-description')[0].innerHTML =
+
+
+            '<strong>Sector</strong>: '
+            + '<br>' +
+            d.sector
+            + '<br>' +
+            '<strong>Actividades realizadas:</strong>'
+            + '<br>' +
+            d.activities
+            + '<br>' +
+            'Desde ' + d.date_from + ' hasta ' + d.date_to;
+
         dataexperience.appendChild(newexp);
     });
 
 
-    //Abilities
+    //TODO: Abilities
 
 
     // Objects to animate and references
@@ -219,6 +163,7 @@ function dataLoadCompleted(data) {
         "icon1": did('icon1'),
         "icon2": did('icon2'),
         "icon3": did('icon3'),
+        "iconref": did('iconref')
     }
 
     //Call animation on scroll
@@ -228,7 +173,7 @@ function dataLoadCompleted(data) {
         }
     );
 
-    //Call animation on load
+    //Call animation on load and scroll
     animateAll(domObj);
 }
 
@@ -236,7 +181,7 @@ function dataLoadCompleted(data) {
 window.addEventListener('load', (e) => {
 
     //Load data
-    loadData('data/mydata.json');
+    loadData('data/data.json');
 
     //Close nav on clic
     const navLinks = document.querySelectorAll('.nav-item');
@@ -250,3 +195,9 @@ window.addEventListener('load', (e) => {
     });
 
 });
+
+//set first anchor
+if (window.location.href.indexOf('#') < 0) {
+    window.location.href = "#sec1";
+    did('sec1').scrollIntoView();
+}

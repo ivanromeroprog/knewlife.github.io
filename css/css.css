@@ -40,6 +40,8 @@ h6 {
 main {
   /*background-color: black;*/
   color: white;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 main .container p {
@@ -77,14 +79,29 @@ main .container h2 {
   margin-top: 37px;
   min-height: 105vh;
   padding-top: 60px;
-  max-width: 100%;
-  overflow: hidden;
 }
 
 .scrolla {
   translate: 0 -20px;
   display: block;
   height: 10px;
+}
+
+a.contact-link{
+  color:#f9004d;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+a.link-light{
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s !important;
+}
+a.contact-link:hover, a.link-light:hover{
+  color: #ff97b6 !important;
 }
 
 #profile {
@@ -106,6 +123,10 @@ main .container h2 {
 
 #data-description{
   margin-top: 20px;
+}
+
+#data-experience .card{
+  margin-bottom: 10px;
 }
 
 #icon1,#icon2,#icon3{
