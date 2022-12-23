@@ -1,15 +1,15 @@
 {
-    "background_color": "red",
-    "description": "CV",
+    "background_color": "black",
+    "description": "Curriculum Vitae",
     "display": "fullscreen",
     "icons": [
       {
-        "src": "css/log.png",
+        "src": "img/logo.png",
         "sizes": "140x113",
         "type": "image/png"
       }
     ],
-    "name": "CV",
-    "short_name": "CV",
+    "name": "Curriculum Vitae",
+    "short_name": "Curriculum Vitae",
     "start_url": "/cv/index.html"
   }
