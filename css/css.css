@@ -125,9 +125,14 @@ a.contact-link:hover, a.link-light:hover{
   margin-top: 20px;
 }
 
-#data-experience .card{
+:is(#data-experience, #data-abilities) .card{
   margin-bottom: 10px;
 }
+
+:is(#data-experience, #data-abilities) .card h6{
+  margin-top: 10px;
+}
+
 
 #icon1,#icon2,#icon3{
   visibility: hidden;

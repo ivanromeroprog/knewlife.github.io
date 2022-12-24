@@ -1,7 +1,3 @@
-
-
-
-//This project functions
 /**
  * function to be called when scrolling the page, one call for every object to animate.
  * @param {*object} obj object to be animated
@@ -92,11 +88,14 @@ function loadData(url) {
  */
 function dataLoadCompleted(data) {
 
+    ////////////////////
     //Personal information
+    ////////////////////
+    
     document.title = data.name.last + ", " + data.name.first + ' - ' + 'Curriculum Vitae';
     did('data-name').innerText = did('data-title').innerText = data.name.last + ", " + data.name.first;
     did('data-ocupation').innerText = data.ocupation;
-    did('data-description').innerHTML = '<p>' + replaceAll(data.description, '\n', '</p><p>') + '</p>';
+    did('data-description').innerHTML = nlToP(data.description);
     did('data-picture').src = data.picture;
     did('data-personal').innerHTML =
 
@@ -108,29 +107,31 @@ function dataLoadCompleted(data) {
         ;
     did('data-url').href = data.url;
 
+    ////////////////////
     //Experience
+    ////////////////////
 
     //Get template
-    const template = did('data-experience-template').cloneNode(true);
-    template.removeAttribute('id');
+    const templateExperience = did('data-experience-template').cloneNode(true);
+    templateExperience.removeAttribute('id');
 
     //Get container object
-    const dataexperience = did('data-experience');
-    let newexp;
+    const dataExperience = did('data-experience');
+    let newExp;
 
     //Clear container object
-    let child = dataexperience.lastElementChild;
+    let child = dataExperience.lastElementChild;
     while (child) {
-        dataexperience.removeChild(child);
-        child = dataexperience.lastElementChild;
+        dataExperience.removeChild(child);
+        child = dataExperience.lastElementChild;
     }
 
     //Add data
     data.experience.forEach(d => {
-        newexp = template.cloneNode(true);
-        newexp.getElementsByClassName('data-employer')[0].innerText = d.employer;
-        newexp.getElementsByClassName('data-position')[0].innerText = d.position;
-        newexp.getElementsByClassName('data-position-description')[0].innerHTML =
+        newExp = templateExperience.cloneNode(true);
+        newExp.getElementsByClassName('data-employer')[0].innerText = d.employer;
+        newExp.getElementsByClassName('data-position')[0].innerText = d.position;
+        newExp.getElementsByClassName('data-position-description')[0].innerHTML =
 
 
             '<strong>Sector</strong>: '
@@ -143,12 +144,43 @@ function dataLoadCompleted(data) {
             + '<br>' +
             'Desde ' + d.date_from + ' hasta ' + d.date_to;
 
-        dataexperience.appendChild(newexp);
+        dataExperience.appendChild(newExp);
     });
 
+    ////////////////////
+    //Abilities
+    ////////////////////
 
-    //TODO: Abilities
+    //Get template
+    const templateAbilities = did('data-abilities-template').cloneNode(true);
+    templateAbilities.removeAttribute('id');
 
+    //Get container object
+    const dataAbilities = did('data-abilities');
+
+    //Clear container object
+    child = dataAbilities.lastElementChild;
+    while (child) {
+        dataAbilities.removeChild(child);
+        child = dataAbilities.lastElementChild;
+    }
+
+    //Add data
+    data.abilities.forEach(d => {
+        newExp = templateAbilities.cloneNode(true);
+        newExp.getElementsByClassName('data-abilities-title')[0].innerText = d.title;
+
+        let abilitiescontent = '';
+        d.list.forEach(le => {
+            abilitiescontent +=
+
+                '<h6>' + le.title + '</h6>' +
+                nlToP(le.content);
+        });
+
+        newExp.getElementsByClassName('data-abilities-description')[0].innerHTML = abilitiescontent;
+        dataAbilities.appendChild(newExp);
+    });
 
     // Objects to animate and references
     let domObj = {
@@ -181,7 +213,7 @@ function dataLoadCompleted(data) {
 window.addEventListener('load', (e) => {
 
     //Load data
-    loadData('data/data.json');
+    loadData('data/mydata.json');
 
     //Close nav on clic
     const navLinks = document.querySelectorAll('.nav-item');

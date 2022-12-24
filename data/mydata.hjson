@@ -96,13 +96,13 @@ Siento pasión por la informática y especialmente por el desarrollo web. He tra
             •	C#, .NET Platform, .NET Framework
             •	MSSQL Server
             •	Conocimientos básicos de:
-              o	Docker
-              o	Python
-              o	Java
+            	o	Docker
+            	o	Python
+            	o	Java
             '''
         }
         {
-          title: Manejo de Software de Oficina:
+          title: Manejo de Software de Oficina:,
           content:
             '''
             •	Microsoft Word
@@ -114,7 +114,7 @@ Siento pasión por la informática y especialmente por el desarrollo web. He tra
             '''
         }
         {
-          title: Mantenimiento y Reparación de PC
+          title: Mantenimiento y Reparación de PC,
           content:
             '''
 •	Solución de Problemas comunes.
@@ -133,8 +133,8 @@ Siento pasión por la informática y especialmente por el desarrollo web. He tra
       [
         {
           title: Diseño Gráfico Digital
-          content: '''• Adobe Photoshop
-          • Adobe Ilustrator'''
+          content: '''•	Adobe Photoshop
+          •	Adobe Ilustrator'''
         }
         {
           title: Composición y Edición de Video
@@ -154,8 +154,14 @@ Siento pasión por la informática y especialmente por el desarrollo web. He tra
           content: Castellano
         }
         {
-          title: Lengua materna
-          content: Castellano
+          title: Otras lenguas
+          content:
+          '''
+          •	Inglés:
+          	o	Lectura: medio
+          	o	Escritura: inicial
+          	o	Expresión oral: inicial
+          '''
         }
         {
           title: Permisos de conducción
