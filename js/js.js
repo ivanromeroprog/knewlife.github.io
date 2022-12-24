@@ -213,7 +213,7 @@ function dataLoadCompleted(data) {
 window.addEventListener('load', (e) => {
 
     //Load data
-    loadData('data/mydata.json');
+    loadData('data/data.json');
 
     //Close nav on clic
     const navLinks = document.querySelectorAll('.nav-item');
