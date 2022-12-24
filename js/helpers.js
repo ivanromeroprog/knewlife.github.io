@@ -38,6 +38,12 @@ function replaceAll(str, find, replace) {
     return str.replace(new RegExp(escapeRegExp(find), 'g'), replace);
 }
 
+function nlToP(txt){
+    txt = '<p>' + replaceAll(txt, '\n', '</p><p>') + '</p>';
+    txt = replaceAll(txt, '\t', ' &nbsp; &nbsp; ');
+    return txt;
+}
+
 
 
 

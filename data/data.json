@@ -81,51 +81,51 @@
     ],
     "abilities": [
       {
-        "title": "Aptitudes Técnicas",
         "list": [
           {
-            "title": "Diseño y Desarrollo de aplicaciones Web",
-            "content": "Diseño y Desarrollo de aplicaciones Web y otro tipo de Software:\n•\tPHP 7/8\n•\tMySQL/María DB\n•\tSymfony Framework\n•\tHTML5, CSS3, Javascript\n•\tBootstrap, JQuery, HOTWIRE Stimulous\n•\tComposer, npm, yarn, webpack\n•\tGit, SSH\n•\tC#, .NET Platform, .NET Framework\n•\tMSSQL Server\n•\tConocimientos básicos de:\n  o\tDocker\n  o\tPython\n  o\tJava"
+            "content": "Diseño y Desarrollo de aplicaciones Web y otro tipo de Software:\n•\tPHP 7/8\n•\tMySQL/María DB\n•\tSymfony Framework\n•\tHTML5, CSS3, Javascript\n•\tBootstrap, JQuery, HOTWIRE Stimulous\n•\tComposer, npm, yarn, webpack\n•\tGit, SSH\n•\tC#, .NET Platform, .NET Framework\n•\tMSSQL Server\n•\tConocimientos básicos de:\n\to\tDocker\n\to\tPython\n\to\tJava",
+            "title": "Diseño y Desarrollo de aplicaciones Web"
           },
           {
-            "title": "Manejo de Software de Oficina:",
-            "content": "•\tMicrosoft Word\n•\tMicrosoft Excel\n•\tMicrosoft PowerPoint\n•\tMicrosoft Access\n•\tMicrosoft Project\n•\tMicrosoft Visio"
+            "content": "•\tMicrosoft Word\n•\tMicrosoft Excel\n•\tMicrosoft PowerPoint\n•\tMicrosoft Access\n•\tMicrosoft Project\n•\tMicrosoft Visio",
+            "title": "Manejo de Software de Oficina:,"
           },
           {
-            "title": "Mantenimiento y Reparación de PC",
-            "content": "•\tSolución de Problemas comunes.\n•\tMantenimiento de Equipos.\n•\tInstalación de Aplicaciones y Sistemas Operativos.\n•\tConocimientos de Redes.\n•\tAdministración de Bases de Datos.\n•\tManejo de Sistemas Windows y Linux."
+            "content": "•\tSolución de Problemas comunes.\n•\tMantenimiento de Equipos.\n•\tInstalación de Aplicaciones y Sistemas Operativos.\n•\tConocimientos de Redes.\n•\tAdministración de Bases de Datos.\n•\tManejo de Sistemas Windows y Linux.",
+            "title": "Mantenimiento y Reparación de PC,"
           }
-        ]
+        ],
+        "title": "Aptitudes Técnicas"
       },
       {
-        "title": "Aptitudes Artísticas",
         "list": [
           {
-            "title": "Diseño Gráfico Digital",
-            "content": "• Adobe Photoshop\n• Adobe Ilustrator"
+            "content": "•\tAdobe Photoshop\n•\tAdobe Ilustrator",
+            "title": "Diseño Gráfico Digital"
           },
           {
-            "title": "Composición y Edición de Video",
-            "content": "•\tAdobe Premiere\n•\tAdobe After Effects\n•\tAdobe Encore"
+            "content": "•\tAdobe Premiere\n•\tAdobe After Effects\n•\tAdobe Encore",
+            "title": "Composición y Edición de Video"
           }
-        ]
+        ],
+        "title": "Aptitudes Artísticas"
       },
       {
-        "title": "Aptitudes Personales",
         "list": [
           {
-            "title": "Lengua materna",
-            "content": "Castellano"
+            "content": "Castellano",
+            "title": "Lengua materna"
           },
           {
-            "title": "Lengua materna",
-            "content": "Castellano"
+            "content": "•\tInglés:\n\to\tLectura: medio\n\to\tEscritura: inicial\n\to\tExpresión oral: inicial",
+            "title": "Otras lenguas"
           },
           {
-            "title": "Permisos de conducción",
-            "content": "Si"
+            "content": "Si",
+            "title": "Permisos de conducción"
           }
-        ]
+        ],
+        "title": "Aptitudes Personales"
       }
     ]
 }

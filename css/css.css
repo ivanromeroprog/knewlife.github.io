@@ -79,6 +79,7 @@ main .container h2 {
   margin-top: 37px;
   min-height: 105vh;
   padding-top: 60px;
+  padding-bottom: 10px;
 }
 
 .scrolla {
@@ -104,6 +105,16 @@ a.contact-link:hover, a.link-light:hover{
   color: #ff97b6 !important;
 }
 
+a.btn-light{
+  transition: 
+    all 0.5s !important;
+}
+a.btn-light:hover{
+  background-color: #f9004d !important;
+  border-color: #f9004d !important;
+  color: white !important;
+}
+
 #profile {
   width: 138px;
   height: 138px;
@@ -125,8 +136,13 @@ a.contact-link:hover, a.link-light:hover{
   margin-top: 20px;
 }
 
-#data-experience .card{
-  margin-bottom: 10px;
+
+:is(#data-experience, #data-abilities) .card{
+  margin: 10px 0;
+}
+
+:is(#data-experience, #data-abilities) .card h6{
+  margin: 10px 0;
 }
 
 #icon1,#icon2,#icon3{
