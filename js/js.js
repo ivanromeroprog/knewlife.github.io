@@ -76,10 +76,10 @@ function loadData(url) {
         .then(response => response.json())
         .then(data => {
             dataLoadCompleted(data);
-        })/*
+        })
         .catch((e) => {
-            alert('Error loading data.');
-        })*/;
+            alert('Error cargando datos.');
+        });
 }
 
 /**
@@ -95,7 +95,7 @@ function dataLoadCompleted(data) {
     document.title = data.name.last + ", " + data.name.first + ' - ' + 'Curriculum Vitae';
     did('data-name').innerText = did('data-title').innerText = data.name.last + ", " + data.name.first;
     did('data-ocupation').innerText = data.ocupation;
-    did('data-description').innerHTML = nlToP(data.description);
+    did('data-description').innerHTML = newlineToParagraph(data.description);
     did('data-picture').src = data.picture;
     did('data-personal').innerHTML =
 
@@ -132,7 +132,6 @@ function dataLoadCompleted(data) {
         newExp.getElementsByClassName('data-employer')[0].innerText = d.employer;
         newExp.getElementsByClassName('data-position')[0].innerText = d.position;
         newExp.getElementsByClassName('data-position-description')[0].innerHTML =
-
 
             '<strong>Sector</strong>: '
             + '<br>' +
@@ -173,9 +172,8 @@ function dataLoadCompleted(data) {
         let abilitiescontent = '';
         d.list.forEach(le => {
             abilitiescontent +=
-
                 '<h6>' + le.title + '</h6>' +
-                nlToP(le.content);
+                newlineToParagraph(le.content);
         });
 
         newExp.getElementsByClassName('data-abilities-description')[0].innerHTML = abilitiescontent;
