@@ -91,7 +91,8 @@ function dataLoadCompleted(data) {
     ////////////////////
     //Personal information
     ////////////////////
-    
+
+    new Image().src = data.picture;
     document.title = data.name.last + ", " + data.name.first + ' - ' + 'Curriculum Vitae';
     did('data-name').innerText = did('data-title').innerText = data.name.last + ", " + data.name.first;
     did('data-ocupation').innerText = data.ocupation;
