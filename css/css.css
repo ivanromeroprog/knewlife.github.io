@@ -56,6 +56,11 @@ main .container {
   background-color: #1b1b1b;
 }
 
+footer .container {
+  width: auto;
+  max-width: 680px;
+}
+
 main .container h2 {
   border: 2px #f9004d solid;
   border-left: 0;
@@ -88,31 +93,39 @@ main .container h2 {
   height: 10px;
 }
 
-a.contact-link{
-  color:#f9004d;
+a.contact-link {
+  color: #f9004d;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   -o-transition: color 0.2s;
   transition: color 0.2s;
 }
-a.link-light{
+
+a.link-light {
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   -o-transition: color 0.2s;
   transition: color 0.2s !important;
 }
-a.contact-link:hover, a.link-light:hover{
+
+a.contact-link:hover,
+a.link-light:hover {
   color: #ff97b6 !important;
 }
 
-a.btn-light{
-  transition: 
+a.btn-light {
+  transition:
     all 0.5s !important;
 }
-a.btn-light:hover{
+
+a.btn-light:hover {
   background-color: #f9004d !important;
   border-color: #f9004d !important;
   color: white !important;
+}
+
+.sr-instagram a{
+  background-color: #f9004d !important;
 }
 
 #profile {
@@ -132,21 +145,29 @@ a.btn-light:hover{
   font-size: 0.8em;
 }
 
-#data-description{
+#data-description {
   margin-top: 20px;
 }
 
 
-:is(#data-experience, #data-abilities) .card{
+:is(#data-experience, #data-abilities) .card {
   margin: 10px 0;
 }
 
-:is(#data-experience, #data-abilities) .card h6{
+:is(#data-experience, #data-abilities) .card h6 {
   margin: 10px 0;
 }
 
-#icon1,#icon2,#icon3{
+#icon1,
+#icon2,
+#icon3 {
   visibility: hidden;
+}
+
+#arriba{
+  width: 32px !important;
+  height: 32px !important;
+  padding: 0.2em;
 }
 
 /** Big screens */
@@ -159,7 +180,7 @@ a.btn-light:hover{
     width: calc(100vw - 1rem);
   }
 
-  #card{
+  #card {
     font-size: 1em;
   }
 }
