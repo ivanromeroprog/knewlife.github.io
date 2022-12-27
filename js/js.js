@@ -1,13 +1,12 @@
 /**
  * function to be called when scrolling the page, one call for every object to animate.
- * @param {*object} obj object to be animated
+ * @param {object} obj object to be animated
  * @param {object} refObj object wich position will be used as a reference to animate in/out obj
  * @param {string} animationIn animate.css animation name to use when the obj appears 
  * @param {string} animationOut animate.css animation name to use when the obj disappears  
  * @param {number} duration duration of animations in secconds 
  * @param {number} offsetIn offset in pixels from the bottom of the viewport to trigger animations
  * @param {number} offsetOut offset in pixels from the top of the viewport to trigger animations
- * @returns 
  */
 function animateOnScroll(obj, refObj, animationIn, animationOut, duration, offsetIn, offsetOut) {
 
@@ -64,6 +63,27 @@ function animateAll(domObj) {
     animateOnScroll(domObj.icon1, domObj.iconref, 'backInLeft', 'fadeOutLeft', 1.25, -100, 50);
     animateOnScroll(domObj.icon2, domObj.iconref, 'zoomIn', 'fadeOut', 0.75, -100, 50);
     animateOnScroll(domObj.icon3, domObj.iconref, 'backInRight', 'fadeOutRight', 1.25, -100, 50);
+}
+
+/**
+ * Returns data necesary to animate objects in the webpage
+ * @returns {object} animation data
+ */
+function getAnimationData(){
+    return {
+        "profile": did('profile'),
+        "card": did('card'),
+        "an1obj": did('an1'),
+        "s1obj": did('s1'),
+        "an2obj": did('an2'),
+        "s2obj": did('s2'),
+        "an3obj": did('an3'),
+        "s3obj": did('s3'),
+        "icon1": did('icon1'),
+        "icon2": did('icon2'),
+        "icon3": did('icon3'),
+        "iconref": did('iconref')
+    };
 }
 
 /**
@@ -181,40 +201,25 @@ function dataLoadCompleted(data) {
         dataAbilities.appendChild(newExp);
     });
 
-    // Objects to animate and references
-    let domObj = {
-        "profile": did('profile'),
-        "card": did('card'),
-        "an1obj": did('an1'),
-        "s1obj": did('s1'),
-        "an2obj": did('an2'),
-        "s2obj": did('s2'),
-        "an3obj": did('an3'),
-        "s3obj": did('s3'),
-        "icon1": did('icon1'),
-        "icon2": did('icon2'),
-        "icon3": did('icon3'),
-        "iconref": did('iconref')
-    }
-
-    //Call animation on scroll
+    ////////////////////
+    //Animations
+    ////////////////////
+    let domObj = getAnimationData();
     document.addEventListener('scroll',
         (e) => {
             animateAll(domObj);
         }
     );
-
-    //Call animation on load and scroll
     animateAll(domObj);
 }
 
 //Events
 window.addEventListener('load', (e) => {
 
-    //Load data
+    //Load data from json file
     loadData('data/data.json');
 
-    //Close nav on clic
+    //Close nav menu on clic
     const navLinks = document.querySelectorAll('.nav-item');
     const menuToggle = document.getElementById('navbarCollapse');
     const bsCollapse = new bootstrap.Collapse(menuToggle, { "toggle": false });
@@ -227,7 +232,7 @@ window.addEventListener('load', (e) => {
 
 });
 
-//set first anchor
+//Set first anchor immediately
 if (window.location.href.indexOf('#') < 0) {
     window.location.href = "#sec1";
     did('sec1').scrollIntoView();
