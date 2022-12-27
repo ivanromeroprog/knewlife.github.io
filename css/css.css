@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
   scrollbar-width: thin;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
-  background: url('../img/bk.jpg') fixed;
+  background: url('../img/bk.jpg') #0c0a0b fixed;
 }
 
 body::-webkit-scrollbar-track {
