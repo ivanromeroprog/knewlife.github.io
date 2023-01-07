@@ -13,4 +13,4 @@ Desarrollo de un CV usando HTML, CSS y Javascript
 
 Link de acceso:
 
-https://knewlife.github.io
+https://ivanromeroprog.github.io
