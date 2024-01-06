@@ -74,6 +74,14 @@ Siento pasión por la informática y especialmente por el desarrollo web. He tra
       position: Coordinador de Carrera - Tecnicatura Superior en Desarrollo de Software
       activities: Coordinación de Actividades académicas en la carrera Tecnicatura Superior en Desarrollo de Software.
     }
+    {
+      date_from: 01/2022
+      date_to: la actualidad
+      employer: Webexport, Miguel Lillo 365 - Local 1 y 2 – Central, San Miguel de Tucumán.
+      sector: Desarrollo de software
+      position: Desarrollador web full-stack
+      activities: Desarrollo y mantenimiento de software de E-commerce.
+    }
   ]
   abilities:
   [
