@@ -148,7 +148,7 @@ function dataLoadCompleted(data) {
     }
 
     //Add data
-    data.experience.forEach(d => {
+    data.experience.reverse().forEach(d => {
         newExp = templateExperience.cloneNode(true);
         newExp.getElementsByClassName('data-employer')[0].innerText = d.employer;
         newExp.getElementsByClassName('data-position')[0].innerText = d.position;

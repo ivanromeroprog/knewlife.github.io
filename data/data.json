@@ -1,118 +1,128 @@
 {
-    "name": {
-        "title": "Miss",
-        "first": "Jennie",
-        "last": "Nichols"
-    },
-    "ocupation": "Web Developer",
-    "location": {
-        "street": {
-            "number": 8929,
-            "name": "Valwood Pkwy"
+  "abilities": [
+    {
+      "list": [
+        {
+          "content": "Diseño y Desarrollo de aplicaciones Web y otro tipo de Software:\n•\tPHP 7/8\n•\tMySQL/Maria DB\n•\tSymfony Framework, Laravel\n•\tHTML5, CSS3, Javascript\n•\tBootstrap, JQuery, HOTWIRE Stimulus\n•\tReact\n•\tComposer, npm, yarn, webpack\n•\tGit, SSH\n•\tC#, .NET Platform, .NET Framework\n•\tMSSQL Server\n•\tConocimientos básicos de:\n\to\tDocker\n\to\tPython\n\to\tJava",
+          "title": "Diseño y Desarrollo de aplicaciones Web"
         },
-        "city": "Billings",
-        "state": "Michigan",
-        "country": "United States",
-        "postcode": "63104",
-        "coordinates": {
-            "latitude": "-69.8246",
-            "longitude": "134.8719"
+        {
+          "content": "•\tMicrosoft Word\n•\tMicrosoft Excel\n•\tMicrosoft PowerPoint\n•\tMicrosoft Access\n•\tMicrosoft Project\n•\tMicrosoft Visio",
+          "title": "Manejo de Software de Oficina"
         },
-        "timezone": {
-            "offset": "+9:30",
-            "description": "Adelaide, Darwin"
+        {
+          "content": "•\tSolución de Problemas comunes.\n•\tMantenimiento de Equipos.\n•\tInstalación de Aplicaciones y Sistemas Operativos.\n•\tConocimientos de Redes.\n•\tAdministración de Bases de Datos.\n•\tManejo de Sistemas Windows y Linux.",
+          "title": "Mantenimiento y Reparación de PC"
         }
+      ],
+      "title": "Aptitudes Técnicas"
     },
-    "email": "jennie.nichols@example.com",
-    "url": "https://www.google.com",
-    "login": {
-        "uuid": "7a0eed16-9430-4d68-901f-c0d4c1c3bf00",
-        "username": "yellowpeacock117",
-        "password": "addison",
-        "salt": "sld1yGtd",
-        "md5": "ab54ac4c0be9480ae8fa5e9e2a5196a3",
-        "sha1": "edcf2ce613cbdea349133c52dc2f3b83168dc51b",
-        "sha256": "48df5229235ada28389b91e60a935e4f9b73eb4bdb855ef9258a1751f10bdc5d"
+    {
+      "list": [
+        {
+          "content": "•\tAdobe Photoshop\n•\tAdobe Ilustrator",
+          "title": "Diseño Gráfico Digital"
+        },
+        {
+          "content": "•\tAdobe Premiere\n•\tAdobe After Effects\n•\tAdobe Encore",
+          "title": "Composición y Edición de Video"
+        }
+      ],
+      "title": "Aptitudes Artísticas"
     },
-    "dob": {
-        "date": "1992-03-08T15:13:16.688Z",
-        "age": 30
+    {
+      "list": [
+        {
+          "content": "Castellano",
+          "title": "Lengua materna"
+        },
+        {
+          "content": "•\tInglés:\n\to\tLectura: medio\n\to\tEscritura: inicial\n\to\tExpresión oral: inicial",
+          "title": "Otras lenguas"
+        },
+        {
+          "content": "Si",
+          "title": "Permisos de conducción"
+        }
+      ],
+      "title": "Aptitudes Personales"
+    }
+  ],
+  "cell": "(03775) 15439547",
+  "description": "Siempre dispuesto a trabajar de manera multidisciplinaria y en equipo para desarrollar actividades técnicas específicas.\nSoy responsable y capaz de organizarme de manera autónoma, reconociendo mis propios límites, pero siempre buscando dar lo mejor en cada tarea realizada.\nSiento pasión por la informática y especialmente por el desarrollo web. He trabajado con multitud de tecnologías a través de los años.",
+  "dob": {
+    "age": 30,
+    "date": "1987-11-08T16:00:00.000Z"
+  },
+  "email": "ivanromeroprog@gmail.com",
+  "experience": [
+    {
+      "activities": "Dictado de Cursos de programas de Oficina (Microsoft Office) y de introducción CorelDraw, Internet.",
+      "date_from": "04/2007",
+      "date_to": "12/2007",
+      "employer": "Biblioteca Popular “Sin Fronteras”, Juan Pujol 1911",
+      "position": "Instructor",
+      "sector": "Educación"
     },
-    "registered": {
-        "date": "2007-07-09T05:51:59.390Z",
-        "age": 14
+    {
+      "activities": "Diseño y Programación de Aplicaciones Web.",
+      "date_from": "01/2008",
+      "date_to": "01/2010",
+      "employer": "Independiente",
+      "position": "Diseñador y Programador Web Independiente",
+      "sector": "Internet, Tecnología"
     },
-    "phone": "(272) 790-0888",
-    "cell": "(489) 330-2385",
-    "id": {
-        "name": "SSN",
-        "value": "405-88-3636"
+    {
+      "activities": "Diseño y Retoque Fotográfico, Edición de Video, Mantenimiento de los Equipos de Trabajo.",
+      "date_from": "10/2009",
+      "date_to": "12/2019",
+      "employer": "JR Producciones, Eva Duarte de Perón 973",
+      "position": "Diseñador",
+      "sector": "Atención al Público, Diseño"
     },
-    "picture": "https://randomuser.me/api/portraits/men/75.jpg",
-    "nat": "US",
-    "description": "Adaptado a trabajar de manera multidisciplinaria integrando aspectos como el trabajo en equipo y la colaboración en actividades técnicas específicas.\nResponsable y capaz de organizarse de manera autónoma, reconociendo los propios límites, pero siempre buscando dar lo mejor en cada tarea realizada.\nSoy un apasionado por la informática y especialmente por la programación web. He trabajado con multitud de tecnologías a través de los años.",
-    "experience": [
-
-      {
-        "date_from": "01/2008",
-        "date_to": "01/2010",
-        "employer": "Independiente",
-        "sector": "Internet, Tecnología",
-        "position": "Diseñador y Programador Web Independiente",
-        "activities": "Diseño y Programación de Aplicaciones Web."
-      },
-
-      {
-        "date_from": "4/2015",
-        "date_to": "Actualidad",
-        "employer": "ISFD “Dr. Ramón J Cárcano”, Colón 880",
-        "sector": "Educación",
-        "position": "Docente",
-        "activities": "Dictado de Clases en Tecnicaturas de Nivel Superior en asignaturas del área de informática."
-      },
-      {
-        "date_from": "11/2019",
-        "date_to": "Actualidad",
-        "employer": "ISFD “Dr. Ramón J Cárcano”, Colón 880",
-        "sector": "Educación",
-        "position": "Administrador de Plataforma de E-learning",
-        "activities": "Administrador de Plataforma de E-learning para cursos y asignaturas de profesorados."
-      }
-    ],
-    "abilities": [
-      {
-        "list": [
-          {
-            "content": "Diseño y Desarrollo de aplicaciones Web y otro tipo de Software:\n•\tPHP 7/8\n•\tMySQL/María DB\n•\tSymfony Framework\n•\tHTML5, CSS3, Javascript\n•\tBootstrap, JQuery, HOTWIRE Stimulous\n•\tComposer, npm, yarn, webpack\n•\tGit, SSH\n•\tC#, .NET Platform, .NET Framework\n•\tMSSQL Server\n•\tConocimientos básicos de:\n\to\tDocker\n\to\tPython\n\to\tJava",
-            "title": "Diseño y Desarrollo de aplicaciones Web"
-          },
-          {
-            "content": "•\tMicrosoft Word\n•\tMicrosoft Excel\n•\tMicrosoft PowerPoint\n•\tMicrosoft Access\n•\tMicrosoft Project\n•\tMicrosoft Visio",
-            "title": "Manejo de Software de Oficina"
-          },
-          {
-            "content": "•\tSolución de Problemas comunes.\n•\tMantenimiento de Equipos.\n•\tInstalación de Aplicaciones y Sistemas Operativos.\n•\tConocimientos de Redes.\n•\tAdministración de Bases de Datos.\n•\tManejo de Sistemas Windows y Linux.",
-            "title": "Mantenimiento y Reparación de PC"
-          }
-        ],
-        "title": "Aptitudes Técnicas"
-      },
-      {
-        "list": [
-          {
-            "content": "Castellano",
-            "title": "Lengua materna"
-          },
-          {
-            "content": "•\tInglés:\n\to\tLectura: medio\n\to\tEscritura: inicial\n\to\tExpresión oral: inicial",
-            "title": "Otras lenguas"
-          },
-          {
-            "content": "Si",
-            "title": "Permisos de conducción"
-          }
-        ],
-        "title": "Aptitudes Personales"
-      }
-    ]
+    {
+      "activities": "Dictado de Clases en Tecnicaturas de Nivel Superior en asignaturas del área de informática.",
+      "date_from": "4/2015",
+      "date_to": "la actualidad",
+      "employer": "ISFD “Dr. Ramón J Cárcano”, Colón 880",
+      "position": "Docente",
+      "sector": "Educación"
+    },
+    {
+      "activities": "Coordinación de Actividades académicas en la carrera Tecnicatura Superior en Desarrollo de Software.",
+      "date_from": "11/2019",
+      "date_to": "la actualidad",
+      "employer": "ISFD “Dr. Ramón J Cárcano”, Colón 880",
+      "position": "Coordinador de Carrera - Tecnicatura Superior en Desarrollo de Software",
+      "sector": "Educación"
+    },
+    {
+      "date_from": "01/2022",
+      "date_to": "la actualidad",
+      "employer": "Webexport, Miguel Lillo 365 - Local 1 y 2 - Central, San Miguel de Tucumán.",
+      "sector": "Desarrollo de software",
+      "position": "Desarrollador web full-stack",
+      "activities": "Desarrollo y mantenimiento de software de E-commerce."
+    }
+  ],
+  "location": {
+    "city": "Monte Caseros",
+    "country": "Argentina",
+    "postcode": "3220",
+    "state": "Corrientes",
+    "street": {
+      "name": "José Pascual Arce ",
+      "number": 448
+    }
+  },
+  "name": {
+    "first": "Iván Yamil",
+    "last": "Romero",
+    "title": "Sr."
+  },
+  "nat": "AR",
+  "ocupation": "Web Developer, Docente",
+  "phone": "-",
+  "picture": "img/prof.jpg",
+  "url": "https://linktr.ee/ivanromeroprog"
 }

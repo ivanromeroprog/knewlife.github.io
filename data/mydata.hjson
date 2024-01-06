@@ -77,7 +77,7 @@ Siento pasión por la informática y especialmente por el desarrollo web. He tra
     {
       date_from: 01/2022
       date_to: la actualidad
-      employer: Webexport, Miguel Lillo 365 - Local 1 y 2 – Central, San Miguel de Tucumán.
+      employer: Webexport, Miguel Lillo 365 - Local 1 y 2 - Central, San Miguel de Tucumán.
       sector: Desarrollo de software
       position: Desarrollador web full-stack
       activities: Desarrollo y mantenimiento de software de E-commerce.
@@ -96,8 +96,9 @@ Siento pasión por la informática y especialmente por el desarrollo web. He tra
             Diseño y Desarrollo de aplicaciones Web y otro tipo de Software:
             •	PHP 7/8
             •	MySQL/Maria DB
-            •	Symfony Framework
+            •	Symfony Framework, Laravel
             •	HTML5, CSS3, Javascript
+            •	React
             •	Bootstrap, JQuery, HOTWIRE Stimulus
             •	Composer, npm, yarn, webpack
             •	Git, SSH
