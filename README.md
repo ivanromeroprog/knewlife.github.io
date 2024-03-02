@@ -14,3 +14,7 @@ Desarrollo de un CV usando HTML, CSS y Javascript
 Link de acceso:
 
 https://ivanromeroprog.github.io
+
+## Versión final con datos reales
+
+https://ivanyromero.com.ar/cv/#sec1
