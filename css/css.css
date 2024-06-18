@@ -170,6 +170,10 @@ a.btn-light:hover {
   padding: 0.2em;
 }
 
+#iconref {
+  min-height: 78px;
+}
+
 /** Big screens */
 @media (min-width: 768px) {
   .navbar-brand {

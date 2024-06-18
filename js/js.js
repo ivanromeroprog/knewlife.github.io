@@ -60,6 +60,7 @@ function animateAll(domObj) {
     animateOnScroll(domObj.an1obj, domObj.s1obj, 'fadeInLeftBig', 'fadeOutLeft', 1, 100, 50);
     animateOnScroll(domObj.an2obj, domObj.s2obj, 'fadeInLeftBig', 'fadeOutLeft', 1, 100, 50);
     animateOnScroll(domObj.an3obj, domObj.s3obj, 'fadeInLeftBig', 'fadeOutLeft', 1, 100, 50);
+    animateOnScroll(domObj.an4obj, domObj.s4obj, 'fadeInLeftBig', 'fadeOutLeft', 1, 100, 50);
     animateOnScroll(domObj.icon1, domObj.iconref, 'backInLeft', 'fadeOutLeft', 1.25, -100, 50);
     animateOnScroll(domObj.icon2, domObj.iconref, 'zoomIn', 'fadeOut', 0.75, -100, 50);
     animateOnScroll(domObj.icon3, domObj.iconref, 'backInRight', 'fadeOutRight', 1.25, -100, 50);
@@ -79,6 +80,8 @@ function getAnimationData(){
         "s2obj": did('s2'),
         "an3obj": did('an3'),
         "s3obj": did('s3'),
+        "an4obj": did('an4'),
+        "s4obj": did('s4'),
         "icon1": did('icon1'),
         "icon2": did('icon2'),
         "icon3": did('icon3'),
