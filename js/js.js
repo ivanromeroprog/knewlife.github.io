@@ -239,4 +239,12 @@ window.addEventListener('load', (e) => {
 if (window.location.href.indexOf('#') < 0) {
     window.location.href = "#sec1";
     did('sec1').scrollIntoView();
+} else if (window.location.href.indexOf('#sec3') >= 0) {
+    setTimeout(() => {
+        did('sec3').scrollIntoView();
+    }, 100);
+} else if (window.location.href.indexOf('#sec4') >= 0) {
+    setTimeout(() => {
+        did('sec4').scrollIntoView();
+    }, 100);
 }
